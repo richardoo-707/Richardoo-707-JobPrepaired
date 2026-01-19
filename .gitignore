@@ -1,0 +1,33 @@
+﻿# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+*.pyc
+
+.DS_Store
+jd_database.json
+uploads/
+*.pdf
+my_career_plan*.md
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# .gitignore
+

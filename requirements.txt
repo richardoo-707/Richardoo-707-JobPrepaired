@@ -1,0 +1,7 @@
+smolagents
+pypdf
+duckduckgo-search
+markdownify
+requests
+python-dotenv
+litellm
