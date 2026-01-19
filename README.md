@@ -20,7 +20,7 @@
 
 ## 📖 项目背景 (Why AutoJob?)
 
-主播作为要秋招的人深受找JD和不停的看是否符合要求的痛苦，正好最近在学agent相关的内容，于是这个项目诞生了，纯为爱发电。
+主播作为要秋招的人深受找JD和不停的看是否符合的痛苦，正好最近在学agent相关的内容，于是这个项目诞生了，纯为爱发电。
 
 如果帮到你，那就太好了！
 
@@ -49,24 +49,26 @@ from 707，以下是readme:
 
 ```mermaid
 graph TD
-    User((👤 用户)) -->|上传简历| WebUI[🖥️ Gradio 控制台]
-    WebUI --> Manager[👩‍💼 Manager Agent<br/>(总指挥 & 质量审核)]
+    User((用户)) -->|上传简历| WebUI[Gradio 控制台]
+    WebUI --> Manager[Manager Agent: 总指挥与质量审核]
     
-    subgraph "AI 专家团队"
+    subgraph Team["AI 专家团队"]
         direction TB
-        Manager -- "1. 市场画像" --> Analyst[🕵️‍♂️ Industry Analyst]
-        Manager -- "2. 职位搜寻" --> Headhunter[🦅 Job Headhunter]
-        Manager -- "3. 差距补强" --> Coach[🎓 Career Coach]
+        Manager -->|1. 市场画像| Analyst[Industry Analyst: 行业分析师]
+        Manager -->|2. 职位搜寻| Headhunter[Job Headhunter: 猎头专家]
+        Manager -->|3. 差距补强| Coach[Career Coach: 职业导师]
     end
 
-    subgraph "Reflexion Loop (反思闭环)"
-        Analyst -->|结果太泛?| Manager
-        Headhunter -->|没薪资?| Manager
-        Coach -->|建议无效?| Manager
-        Manager -- "❌ 打回重做!" --> Analyst & Headhunter & Coach
+    subgraph Reflexion["Reflexion Loop 反思闭环"]
+        Analyst -.->|结果太泛| Manager
+        Headhunter -.->|没薪资| Manager
+        Coach -.->|建议无效| Manager
+        Manager -.->|打回重做| Analyst
+        Manager -.->|打回重做| Headhunter
+        Manager -.->|打回重做| Coach
     end
 
-    Manager -->|✅ 审核通过| Report[📄 Markdown 职业规划书]
+    Manager -->|审核通过| Report[Markdown 职业规划书]
 ```
 
 ---
