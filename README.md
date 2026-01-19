@@ -209,6 +209,7 @@ python app.py
 ---
 
 <div align="center">
+请勿私自商业用途
 
 **Made with ❤️ by 707**
 
